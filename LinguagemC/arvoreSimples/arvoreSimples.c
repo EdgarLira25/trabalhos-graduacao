@@ -105,16 +105,3 @@ void destruirArvore(NO* *p){
 
     *p=NULL;
 }
-
-int main (){
-    NO *raiz;
-    inicializarArvore(&raiz);
-    arvoreVazia(raiz);
-    inserirNo(&raiz, raiz, 7, esq);
-    inserirNo(&raiz, raiz, 9, esq);
-    inserirNo(&raiz, raiz, 8, dir);
-    
-    preOrdem(raiz);
-
-    return 0;
-}

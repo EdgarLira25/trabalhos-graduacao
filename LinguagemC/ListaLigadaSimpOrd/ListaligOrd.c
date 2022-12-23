@@ -111,25 +111,3 @@ bool removeElem(TIPOCHAVE ch, LISTA *l){
     }
     return false;
 }
-
-int main(void){
- 
-    LISTA teste;
-
-    iniciaLista(&teste);
-    
-    insere(&teste, 55);
-    insere(&teste, 15);
-    insere(&teste, 25);
-    veTamanho(teste);
-    imprimeLista(&teste);
-    removeElem(15, &teste); 
-      imprimeLista(&teste);
-/*    primeiro(&teste);    
-    ultimo(&teste);
-    destruir(&teste);
-    veTamanho(teste);
-*/
-    return 0;
-
-}

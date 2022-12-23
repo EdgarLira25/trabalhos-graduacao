@@ -105,20 +105,3 @@ void destruirDeque(DEQUE *d){
     }
     d->inicio1 = d->inicio2 = NULL;
 }
-
-int main (){
-    DEQUE deque;
-
-    inicializarDeque(&deque);
-    inserir1(&deque, 12);
-    inserir1(&deque, 24);
-    inserir1(&deque, 36);
-
-    exibirlista1(deque);
-    printf("\n\n\n");
-    remover2(&deque);
-    exibirlista1(deque);
-    destruirDeque(&deque);
-    
-    return 0;
-}

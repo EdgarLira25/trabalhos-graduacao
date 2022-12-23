@@ -95,29 +95,3 @@ bool removeElem(TIPOCHAVE ch, LISTA *l){
     return false;
 
 }
-
-int main(void){
- 
-    LISTA teste;
-
-    iniciaLista(&teste);
-    
-    insere(&teste, 5);
-    insere(&teste, 33);
-    insere(&teste, 45);
-    removeElem(33, &teste);
-    veTamanho(teste);
-
-    imprimeLista(&teste);    
-    printf("%d", buscaSeq(45, teste));
-    inserirElemListaSeq(36,1, &teste);
-    inserirElemListaSeq(3,2, &teste);
-    imprimeLista(&teste);
-/*    primeiro(&teste);    
-    ultimo(&teste);
-    destruir(&teste);
-    veTamanho(teste);
-*/
-    return 0;
-
-}

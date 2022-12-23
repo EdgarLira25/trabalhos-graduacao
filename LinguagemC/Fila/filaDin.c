@@ -61,28 +61,3 @@ void tamanhoFila(FILA *f){
     }
    printf("Tamanho fila: %d\n", i);
 }
-
-int main (){
-
-    FILA fila;
-    inicializarFila(&fila);
-    insereFila(&fila, 15);
-    insereFila(&fila, 25);
-    insereFila(&fila, 55);
-    insereFila(&fila, 75);
-    insereFila(&fila, 5);
-    insereFila(&fila, 2);
-    tamanhoFila(&fila);
-    exibirLista(fila);
-    removeFila(&fila);
-    removeFila(&fila);
-    removeFila(&fila);
-     removeFila(&fila);
-    removeFila(&fila);
-    
-    printf("\n");
-    exibirLista(fila);
-
-
-    return 0;
-}

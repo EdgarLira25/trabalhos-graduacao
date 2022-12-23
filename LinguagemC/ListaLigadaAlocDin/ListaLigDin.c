@@ -129,23 +129,3 @@ int encontraPos(LISTA *l, TIPOCHAVE ch){
     }
     return -1;
 }
-
-int main(){
-
-    LISTA lista;
-
-    inicializar(&lista);
-     
-    inserir (&lista, 25);
-    inserir (&lista, 5);
-    inserir (&lista, 15);
-    remover (&lista, 5);
-    exibirLista(lista);
-
-
-    
-    return 0;
-
-}
-
-

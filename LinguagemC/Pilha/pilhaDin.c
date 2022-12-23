@@ -57,19 +57,4 @@ void tamanho(PILHA *p){
     printf("Tamanho: %d\n", i);
 
 }
-int main(){
 
-    PILHA pilha;
-    inicializarPilha(&pilha);
-    push(&pilha, 5);
-    push(&pilha, 4);
-    push(&pilha, 89);
-    push(&pilha, 8);
-    tamanho(&pilha);
-    imprimirPilha(pilha);
-    pop(&pilha);
-    printf("remove\n");
-    imprimirPilha(pilha);
-
-    return 0;
-}
