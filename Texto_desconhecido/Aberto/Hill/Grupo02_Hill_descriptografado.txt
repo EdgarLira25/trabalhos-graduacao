@@ -1,0 +1,4 @@
+Texto Cifrado: scfenivoieufylxoyaomgsnaqqyerokaartaeuqnqdqauekuqnjeeuanpoiedecpwdaejadesmguefmrjewbvaaogfgsvousguqp
+Chave: [[6, 14], [0, 16]]
+Chave Inversa: [[7, 2], [0, 1]]
+Texto Aberto: acreditomeufilhomasmasnaoquerosairdaquinodiaseguintequandomedespedieladeumeumforteabracoafastouseump

@@ -1,0 +1,5 @@
+Texto Aberto = vesesgarcadasquesemoviamlentamentecomovelasnaquellemarinfinitogenelicioolhououmpoucoeaconselhoualmir
+Texto Fechado = mrccmkhqykkpkyamccgmghiwwtrliwjuohqogmmrcdvmcmamfveqhqfowfotmvouudqjmqewlfiuiulqiuqowuqomhzmyngwkzze
+Alfabeto = abcdefghijklmnopqrstuvwxyz
+Chave Decript = [[16, 19], [19, 22]]
+Chave Encript = [[6, 22], [22, 2]]

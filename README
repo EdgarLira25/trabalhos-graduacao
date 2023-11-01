@@ -1,0 +1,71 @@
+INTEGRANTES DO GRUPO
+
+EDGAR HENRIQUE DE OLIVEIRA LIRA, NUSP: 12717266
+VINICIUS HENRIQUE SAITO DE ALMEIRDA, NUSP: 10816815
+
+------------------------------------------------------------------
+GUIA DE EXECUÇÂO DOS CÓDIGOS
+
+------------------------------------------------------------------
+!!!!!!!!!!!!!!!!! OBSERVAÇÕES !!!!!!!!!!!!!!!!!!!
+A Pasta Gerador_de_Txts contém todos os programas usados para gerar txts interessantes para descriptografia.
+
+Como um dicionario de palavras utilizadas e o parse do texto do policarpo quaresma.
+
+--------------------------------------------------------------------
+
+!!!!!!!!!!!!!!! DEPENDENCIAS !!!!!!!!!!!!!!!!!!
+Para a descriptografia foram usadas duas linguagens, para a cifra monoalfabética com texto_desconhecido
+foi usada a linguagem Java, na versão
+
+openjdk 20.0.1 2023-04-18
+
+Para os outros foi usada a linguagem python, com a versão:
+
+Python 3.11.4
+
+---------------------------------------------------------------------------
+			
+!!!!!!!!!!!!!! GUIA DA EXECUÇÃO DOS CÓDIGOS PARA DESCRIPTOGRAFIA DE TEXTOS CONHECIDOS !!!!!!!!!!!!!!!!!!!!!!!
+
+Em cada pasta de texto cifrado dentro dos textos_conhecidos, há pastas que contém os
+arquivos para descriptografar a mensagem, tanto na Hill, Mono e Vigenere, há um arquivo main.py
+para as 3 descriptografias, basta executar o comando:
+
+	python main.py
+
+E ela se encarregara de fazer toda descriptografia automaticamente.
+- A execução destas duas descriptografias é relativamente rápida com tempo < 1 min
+---------------------------------------------------------------------------
+
+!!!!!!!!!!!!!! GUIA DA EXECUÇÃO DOS CÓDIGOS PARA DESCRIPTOGRAFIA DE TEXTOS DESCONHECIDO HILL E VIGENERE !!!!!!!!!!!!!!!!!!!!!!!
+
+Segue os mesmos passos das cifras de textos conhecidos, mas agora na pasta de textos_desconhecidos. 
+
+Para a Cifra de HILL é necessário executar a main.py, com o comando:
+
+python main.py
+
+Para a Cifra de Vigenere, devemos executar dois comandos:
+
+python main.py
+
+Após o termino da execução da main, usar o comando:
+
+python verifica_textos.py
+
+- Vale ressaltar que a execução destes dois é mais lenta
+
+----------------------------------------------------------------------------
+!!!!!!!!!!!!!! GUIA DA EXECUÇÃO DO CÓDIGO PARA DESCRIPTOGRAFIA DE TEXTO DESCONHECIDO MONOALFABETICA !!!!!!!!!!!!!!!!!!!!!!!
+!!! Observações !!!
+
+Um método dentro do código pra tentativa esta comentado dado o fato que quando ele comeca a rodar ele fica um tempo em execução.
+
+EXECUÇÃO:
+
+Comandos para rodar com terminal aberto na pasta
+javac Main.java
+java Main
+
+Utilize crtl + c para parar interromper a execução do programa.
