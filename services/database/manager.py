@@ -34,4 +34,3 @@ class DatabaseManager:
             return None
 
         return dict(query_result)
-

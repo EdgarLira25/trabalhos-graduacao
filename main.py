@@ -1,5 +1,5 @@
 from flask import Flask
-from routes.users import users_blueprint
+from api.routes.users import users_blueprint
 
 if __name__ == "__main__":
 

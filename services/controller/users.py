@@ -1,4 +1,4 @@
-from database.manager import DatabaseManager
+from services.database.manager import DatabaseManager
 
 
 class UserController:
