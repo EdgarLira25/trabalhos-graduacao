@@ -7,7 +7,7 @@ class DatabaseManager:
 
     def __init__(self) -> None:
         self.conn = psycopg2.connect(
-            dbname="teste",
+            dbname="tutorial",
             user="postgres",
             password="2002",
             host="172.17.0.2",
