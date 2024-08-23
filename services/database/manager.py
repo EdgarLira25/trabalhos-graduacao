@@ -1,9 +1,11 @@
+"Camada que gerencia o Database"
 from typing import Any
 import psycopg2
 from psycopg2.extras import DictCursor
 
 
 class DatabaseManager:
+    "Classe de Gerenciamento do database"
 
     def __init__(self) -> None:
         self.conn = psycopg2.connect(

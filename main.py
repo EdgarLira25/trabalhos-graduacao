@@ -1,3 +1,4 @@
+"Inicializa FLASK API"
 from flask import Flask
 from api.routes.movies import movies_blueprint
 
