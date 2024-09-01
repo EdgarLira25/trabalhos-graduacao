@@ -12,6 +12,7 @@ export const HeaderContainer = styled.header`
 export const Button = styled.button`
   background-color: #dce0e8;
   color: #333;
+  margin-right: 10px;
   cursor: pointer;
   padding: 10px 20px;
   border: none;

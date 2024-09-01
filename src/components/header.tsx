@@ -7,12 +7,25 @@ const Header = () => {
     const handleNavigateHome = () => {
         navigate('/query');
     };
+    const handleNavigateTables = () => {
+        navigate('/tables');
+    };
+
+    const handleNavigateExamples = () => {
+        navigate('/examples');
+    };
 
     return (
         <HeaderContainer>
             <Navegate>
                 <Button onClick={handleNavigateHome}>
-                   Realizar Consulta 
+                    Realizar Consulta
+                </Button>
+                <Button onClick={handleNavigateExamples}>
+                    Exemplos de Queries
+                </Button>
+                <Button onClick={handleNavigateTables}>
+                    Tabelas do Database
                 </Button>
             </Navegate>
         </HeaderContainer>
