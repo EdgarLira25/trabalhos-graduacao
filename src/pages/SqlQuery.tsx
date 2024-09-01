@@ -1,5 +1,6 @@
+import { isAxiosError } from 'axios';
 import React, { useState } from 'react';
-import axios from 'axios';
+import api from '../api/api';
 
 const SqlQuery: React.FC = () => {
     const [query, setQuery] = useState<string>('');
@@ -13,10 +14,10 @@ const SqlQuery: React.FC = () => {
         event.preventDefault();
 
         try {
-            const res = await axios.get('http://127.0.0.1:8000/query', { params: { query } });
+            const res = await api.get('/query', { params: { query } });
             setResponse(res.data.replace(/\n/g, '\n'));
         } catch (error) {
-            if (axios.isAxiosError(error)) {
+            if (isAxiosError(error)) {
                 if (error.response) {
                     setResponse(`Error: ${error.response.data}`);
                     if (error.response.data === "no results to fetch") setResponse(`Engraçadinho você em, só aceitamos SELECT`);
