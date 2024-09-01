@@ -31,18 +31,16 @@ const SqlQuery: React.FC = () => {
 
     return (
         <Container>
-            <h1>SQL</h1>
+            <h1>Escreva sua Consulta SQL</h1>
             <FormSql onSubmit={handleSubmit}>
                 <TextArea
                     value={query}
                     onChange={handleInputChange}
                     rows={10}
                     cols={50}
-                    placeholder="Escreva sua consulta SQL"
                 />
                 <Button type="submit">Executar Query</Button>
             </FormSql>
-            <Title>Resultado</Title>
             <Pre>{response}</Pre>
         </Container>
     );
