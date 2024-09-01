@@ -1,11 +1,9 @@
-import SqlQuery from './SqlQuery';
+import SqlQuery from './pages/SqlQuery';
 
 function App() {
-  return (
-    <div className="App">
-      <SqlQuery />
-    </div>
-  );
+    return (
+        <SqlQuery />
+    );
 }
 
 export default App;

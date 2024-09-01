@@ -16,25 +16,39 @@ const SqlQuery: React.FC = () => {
             const res = await axios.get('http://127.0.0.1:8000/query', { params: { query } });
             setResponse(res.data.replace(/\n/g, '\n'));
         } catch (error) {
-            setResponse(`Error: ${error}`);
+            if (axios.isAxiosError(error)) {
+                if (error.response) {
+                    setResponse(`Error: ${error.response.data}`);
+                    if (error.response.data === "no results to fetch") setResponse(`Engraçadinho você em, só aceitamos SELECT`);
+                    return
+                }
+            }
+            setResponse(`Error: ${error}`)
         }
     };
 
     return (
-        <div style={{ padding: '20px' }}>
-            <h1>SQL Query Executor</h1>
+        <div
+            style={{
+                display: 'flex',
+                flexDirection: 'column',
+                alignItems: 'center',
+                justifyContent: 'center',
+            }}
+        >
+            <h1>SQL</h1>
             <form onSubmit={handleSubmit}>
                 <textarea
                     value={query}
                     onChange={handleInputChange}
                     rows={10}
                     cols={50}
-                    placeholder="Write your SQL query here..."
+                    placeholder="Escreva sua consulta SQL"
                 />
                 <br />
-                <button type="submit" style={{ marginTop: '10px' }}>Execute Query</button>
+                <button type="submit" style={{ marginTop: '10px', display: 'flex', justifyContent: 'center', flexDirection: 'column' }}>Executar Query</button>
             </form>
-            <h2>Response:</h2>
+            <h2>Resultado</h2>
             <pre>{response}</pre>
         </div>
     );
