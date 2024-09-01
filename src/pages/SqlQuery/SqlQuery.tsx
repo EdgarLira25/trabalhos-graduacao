@@ -1,7 +1,7 @@
 import { isAxiosError } from 'axios';
 import React, { useState } from 'react';
-import api from '../api/api';
-import { Button, Container, FormSql, Pre, TextArea, Title } from './style';
+import api from '../../api/api';
+import { Button, Container, FormSql, Pre, TextArea } from './style';
 
 const SqlQuery: React.FC = () => {
     const [query, setQuery] = useState<string>('');
@@ -21,7 +21,7 @@ const SqlQuery: React.FC = () => {
             if (isAxiosError(error)) {
                 if (error.response) {
                     setResponse(`Error: ${error.response.data}`);
-                    if (error.response.data === "no results to fetch") setResponse(`Engraçadinho você em, só aceitamos SELECT`);
+                    if (error.response.data === "no results to fetch") setResponse(`só aceitamos SELECT`);
                     return
                 }
             }
@@ -39,7 +39,7 @@ const SqlQuery: React.FC = () => {
                     rows={10}
                     cols={50}
                 />
-                <Button type="submit">Executar Query</Button>
+                <Button type="submit">Executar Consulta</Button>
             </FormSql>
             <Pre>{response}</Pre>
         </Container>

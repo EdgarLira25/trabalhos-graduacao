@@ -1,6 +1,6 @@
-import SqlQuery from './pages/SqlQuery';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-dom';
 import Header from './components/header';
+import SqlQuery from './pages/SqlQuery/SqlQuery';
 
 function App() {
     return (
@@ -8,6 +8,7 @@ function App() {
             <Header></Header>
             <Routes>
                 <Route path="/query" element={<SqlQuery />} />
+                <Route path="/" element={<Navigate to="/query" />} />
             </Routes>
         </Router>
     );
