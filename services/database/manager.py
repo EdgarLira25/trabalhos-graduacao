@@ -1,4 +1,5 @@
 "Camada que gerencia o Database"
+import os
 from typing import Any
 import psycopg2
 from psycopg2.extras import DictCursor
@@ -11,7 +12,7 @@ class DatabaseManager:
         self.conn = psycopg2.connect(
             dbname="tutorial",
             user="postgres",
-            password="2002",
+            password=os.environ.get("PASSWORD", ""),
             host="172.17.0.2",
             port=5432,
         )
