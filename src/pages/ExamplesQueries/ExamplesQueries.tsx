@@ -2,6 +2,7 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { FiCopy } from 'react-icons/fi';
 import { queries } from './consts';
+import { Container, ContainerItem, ContainerList, Pre, Title } from './style';
 
 
 const copyToClipboard = (text: string) => {
@@ -20,38 +21,24 @@ const copyToClipboard = (text: string) => {
 
 const ExamplesQueries = () => {
     return (
-        <div style={{ padding: '20px' }}>
-            <h1>Lista de Queries</h1>
-            <div style={{ maxHeight: '650px', overflowY: 'auto', padding: '10px' }}>
-                <ul style={{ listStyleType: 'none', padding: 0 }}>
-                    {queries.map((query, index) => (
-                        <li key={index} style={{ marginBottom: '20px' }}>
-                            <div style={{ display: 'flex', alignItems: 'center' }}>
-                                <pre style={{
-                                    backgroundColor: '#f4f4f4',
-                                    padding: '10px',
-                                    borderRadius: '5px',
-                                    margin: 0,
-                                    overflowX: 'auto',
-                                    maxWidth: '600px',
-                                    whiteSpace: 'pre-wrap',
-                                    wordWrap: 'break-word',
-                                    flex: 1
-                                }}>
-                                    {query}
-                                </pre>
-                                <FiCopy
-                                    onClick={() => copyToClipboard(query)}
-                                    style={{ marginLeft: '10px', cursor: 'pointer' }}
-                                    size={24}
-                                />
-                            </div>
-                        </li>
-                    ))}
-                </ul>
-            </div>
+        <Container>
+            <Title>Lista de Queries</Title>
+            <ContainerList>
+                {queries.map((query, index) => (
+                    <ContainerItem key={index}>
+                        <Pre>
+                            {query}
+                        </Pre>
+                        <FiCopy
+                            onClick={() => copyToClipboard(query)}
+                            style={{ marginLeft: '10px', marginRight: '10px', cursor: 'pointer' }}
+                            size={24}
+                        />
+                    </ContainerItem>
+                ))}
+            </ContainerList>
             <ToastContainer />
-        </div >
+        </Container >
     );
 };
 
