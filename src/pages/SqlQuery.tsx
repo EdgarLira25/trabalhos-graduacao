@@ -1,6 +1,7 @@
 import { isAxiosError } from 'axios';
 import React, { useState } from 'react';
 import api from '../api/api';
+import { Button, Container, FormSql, Pre, TextArea, Title } from './style';
 
 const SqlQuery: React.FC = () => {
     const [query, setQuery] = useState<string>('');
@@ -29,29 +30,21 @@ const SqlQuery: React.FC = () => {
     };
 
     return (
-        <div
-            style={{
-                display: 'flex',
-                flexDirection: 'column',
-                alignItems: 'center',
-                justifyContent: 'center',
-            }}
-        >
+        <Container>
             <h1>SQL</h1>
-            <form onSubmit={handleSubmit}>
-                <textarea
+            <FormSql onSubmit={handleSubmit}>
+                <TextArea
                     value={query}
                     onChange={handleInputChange}
                     rows={10}
                     cols={50}
                     placeholder="Escreva sua consulta SQL"
                 />
-                <br />
-                <button type="submit" style={{ marginTop: '10px', display: 'flex', justifyContent: 'center', flexDirection: 'column' }}>Executar Query</button>
-            </form>
-            <h2>Resultado</h2>
-            <pre>{response}</pre>
-        </div>
+                <Button type="submit">Executar Query</Button>
+            </FormSql>
+            <Title>Resultado</Title>
+            <Pre>{response}</Pre>
+        </Container>
     );
 };
 
