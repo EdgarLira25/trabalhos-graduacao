@@ -1,5 +1,5 @@
 import { useNavigate } from 'react-router-dom';
-import { Button, HeaderContainer, Navegate } from './style';
+import { Button, HeaderContainer, Navegate, Title } from './style';
 
 const Header = () => {
     const navigate = useNavigate();
@@ -15,8 +15,13 @@ const Header = () => {
         navigate('/examples');
     };
 
+    const handleNavigateAbout = () => {
+        navigate('/about')
+    }
+
     return (
         <HeaderContainer>
+            <Title href="https://edisciplinas.usp.br/course/view.php?id=124198" target="_blank" >ACH2004 - BD1</Title>
             <Navegate>
                 <Button onClick={handleNavigateHome}>
                     Realizar Consulta
@@ -27,8 +32,11 @@ const Header = () => {
                 <Button onClick={handleNavigateTables}>
                     Tabelas do Database
                 </Button>
+                <Button onClick={handleNavigateAbout}>
+                    Sobre
+                </Button>
             </Navegate>
-        </HeaderContainer>
+        </HeaderContainer >
     );
 };
 

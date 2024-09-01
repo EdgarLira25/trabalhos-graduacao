@@ -4,7 +4,7 @@ export const HeaderContainer = styled.header`
       display: flex;
       flex-direction: row;
       align-items: center;
-      justify-content: space-between;
+      justify-content: left;
       padding: 20px 30px;
       border-bottom: 2px solid #dce0e8;
 `;
@@ -27,3 +27,18 @@ export const Button = styled.button`
 
 export const Navegate = styled.nav`
 `
+
+export const Title = styled.a`
+    font-size: 19px; /* Tamanho da fonte */
+    font-weight: bold; /* Peso da fonte */
+    letter-spacing: 1px; /* Espaçamento entre letras */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Sombra do texto */
+    border-radius: 10px;
+    background: linear-gradient(90deg,#04a5e5, #7287fd); /* Gradiente de fundo */
+    color: transparent; /* Faz o texto transparente para mostrar o gradiente */
+    border: 1px solid rgba(0, 0, 0, 0.1); /* Borda leve */
+    padding: 5px; /* Espaçamento interno */
+    color: #333; /* Cor do texto */
+    margin-right: 15px; /* Margem direita */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+`;
