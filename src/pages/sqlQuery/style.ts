@@ -1,19 +1,5 @@
 import { styled } from "styled-components"
 
-export const Button = styled.button`
-  margin-top: 10px;
-  padding: 12px 24px;
-  color: #fff;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-  font-size: 16px;
-  background-color: #1e66f5; /* Adicionei uma cor de fundo */
-
-  &:active {
-    background-color: #7287fd; /* Cor ao clicar */
-  }
-`;
 
 export const Container = styled.div`
   display: flex;

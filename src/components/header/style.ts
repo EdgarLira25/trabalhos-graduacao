@@ -23,7 +23,7 @@ export const Button = styled.button`
     background-color: #b0b5c3;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
   }
-`; 
+`;
 
 export const Navegate = styled.nav`
 `

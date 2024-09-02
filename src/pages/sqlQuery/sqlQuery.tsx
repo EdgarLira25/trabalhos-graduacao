@@ -1,19 +1,20 @@
 import { isAxiosError } from 'axios';
 import React, { useState } from 'react';
 import api from '../../api/api';
-import { Button, Container, FormSql, Pre, TextArea } from './style';
+import LoadingButton from '../../components/button/button';
+import { Container, FormSql, Pre, TextArea } from './style';
 
 const SqlQuery: React.FC = () => {
     const [query, setQuery] = useState<string>('');
     const [response, setResponse] = useState<string>('');
-
+    const [isLoading, setIsLoading] = useState<boolean>(false)
     const handleInputChange = (event: React.ChangeEvent<HTMLTextAreaElement>) => {
         setQuery(event.target.value);
     };
 
     const handleSubmit = async (event: React.FormEvent) => {
         event.preventDefault();
-
+        setIsLoading(true)
         try {
             const res = await api.get('/query', { params: { query } });
             setResponse(res.data.replace(/\n/g, '\n'));
@@ -22,11 +23,13 @@ const SqlQuery: React.FC = () => {
                 if (error.response) {
                     setResponse(`Error: ${error.response.data}`);
                     if (error.response.data === "no results to fetch") setResponse(`só aceitamos SELECT`);
-                    return
                 }
             }
-            setResponse(`Error: ${error}`)
+            else {
+                setResponse(`Error: ${error}`)
+            }
         }
+        setIsLoading(false)
     };
 
     return (
@@ -39,7 +42,7 @@ const SqlQuery: React.FC = () => {
                     rows={10}
                     cols={50}
                 />
-                <Button type="submit">Executar Consulta</Button>
+                <LoadingButton loading={isLoading}>Executar Consulta</LoadingButton>
             </FormSql>
             <Pre>{response}</Pre>
         </Container>

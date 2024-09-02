@@ -1,9 +1,9 @@
 import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-dom';
-import Header from './components/header';
+import Header from './components/header/header';
 import About from './pages/about/about';
-import ExamplesQueries from './pages/ExamplesQueries/ExamplesQueries';
-import SqlQuery from './pages/SqlQuery/SqlQuery';
-import Tabelas from './pages/Tabelas/Tabelas';
+import ExamplesQueries from './pages/examplesQueries/examplesQueries';
+import SqlQuery from './pages/sqlQuery/sqlQuery';
+import Tabelas from './pages/tabelas/tabelas';
 
 function App() {
     return (
