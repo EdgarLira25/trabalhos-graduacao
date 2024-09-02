@@ -1,5 +1,6 @@
 """Arquivo na camada de controller intermediando queries e statements"""
 
+from functools import lru_cache
 from services.database.manager import DatabaseManager
 
 
@@ -9,6 +10,9 @@ class QueryController:
     def __init__(self) -> None:
         pass
 
+    # Note: Cache a nivel de API poderia deixar este template com um fluxo não tão simples
+    # maxsize da cache a 24, pois a máquina que roda o backend é extremamente limitada
+    @lru_cache(maxsize=24)
     def execute_generic_query(self, query: str) -> str:
         """Repassa a query para o database e formata a query resultante para uma string"""
 
