@@ -1,0 +1,4 @@
+Epocas = 5
+Batch_size = 200
+Chamando o Modelo:
+model.fit(x_train, y_train, epochs=epocas, batch_size=batch, validation_data=(x_test, y_test), callbacks=[history])
