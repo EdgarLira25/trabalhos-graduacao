@@ -1,0 +1,3 @@
+Não foi possivel descriptografar a cifra de vigenere, mas são gerados varios textos que se forem gerados muitos e muitos, é possivel chegarmos em um resultado plausivel dado o algoritmo
+
+uudfvorduenresnsaoassadtbedeorhpuestariiarsterveftmrshosillbriarlsenaomgladosemruibutcassesgmejuntan forosucolvenheriejugruhosessovasspogiuqujueagmequserenofanteseojosiusenaosdeonadedaqumfpithomoscetci
