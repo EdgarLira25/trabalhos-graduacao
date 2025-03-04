@@ -1,0 +1,82 @@
+EXERCÍCIO 2
+
+(2,0 pontos) Escreva um aplicativo de teste chamado DataTeste para testar
+
+ a classe criada no Exercício 1. O aplicativo deve:
+
+(a) Criar dois objetos Data.
+
+(b) Exibir as duas datas.
+
+(c) Trocar as duas datas chamando o método trocarCom.
+
+(d) Exibir as duas datas novamente.
+
+
+//////////////////////////////////////////////////////
+
+Atividade 2
+
+Implemente uma hierarquia de herança, o mais profunda possível, para
+
+as classes Paralelogramo, Quadrado e Retângulo. Utilize Paralelogramo
+
+como a superclasse da hierarquia. Os atributos da classe Paralelogramo
+
+devem ser privados e são a, h e o ángulo θ (ver Figura 1).
+
+
+
+Figure 1: Paralelogramo.
+
+Todas as classes da hierarquia devem ter:
+
+(a) (1,5 ponto) Um construtor que inicializa os atributos supondo que os
+
+valores fornecidos são corretos.
+
+(b) (1,0 ponto) Os métodos acessadores (get) necessários.
+
+(c) (1,0 ponto) Um método modificador (set) que modifique os valores
+
+de todos os atributos. Suponha que os valores fornecidos são corre-
+
+tos.
+
+(d) (1,0 ponto) Um método chamado toString que devolva um string
+
+com os valores dos atributos do objeto.
+
+Além disso, a classe Paralelogramo deve ter os métodos a seguir.
+
+(a) (1,0 ponto) Um método chamado calcularArea cujo objetivo é calcu-
+
+lar e devolver a área do objeto.
+
+(b) (1,5 ponto) Um método chamado calcularPerimetro cujo objetivo é
+
+calcular e devolver o perímetro do objeto.
+
+Esse dois métodos não devem ser sobrescritos pelas classes filhas.
+
+EXERCÍCIO 2
+
+Escreva um aplicativo de teste chamado TesteFormas para testar as classes
+
+criadas no Exercício 1. O aplicativo deve:
+
+(a) (0,5 ponto) Criar um objeto Paralelogramo, um Retângulo e um Quadrado
+
+e criar um vetor com esses objetos.
+
+(b) (0,5 ponto) Chamar o método toString e o método getAngulo de cada
+
+um dos elementos do vetor.
+
+(c) (0,5 ponto) Calcular e exibir a área de cada um dos elementos do
+
+vetor.
+
+(d) (0,5 ponto) Calcular e exibir o perímetro de cada um dos elementos
+
+do vetor.

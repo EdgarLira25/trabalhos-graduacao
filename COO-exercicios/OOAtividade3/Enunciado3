@@ -1,0 +1,83 @@
+EXERCÍCIO 1
+
+(Questão 10.17 levemente modificada. DEITEL, P.; DEITEL, H. Java - Como
+
+Programar. São Paulo: Pearson Prentice-Hall, 10 a Edição, 2017. Página
+
+346.)
+
+Existe uma preocupação atual com as pegadas de carbono (emissões de
+
+gâs carbônico na atmosfera) a partir de diversos elementos que queimam
+
+combustíveis. Nesse contexto:
+
+(a) Crie três pequenas classes não relacionadas por meio de herança –
+
+as classes Casa, Carro e Bicicleta. Dê a cada classe alguns atribu-
+
+tos e comportamentos (métodos) adequados e únicos que cada uma
+
+delas não tem em comum com as outras classes.
+
+(b) (1,0 ponto) Escreva uma interface EmissorCarbono com um método
+
+getCarbonoEmitido. Faça com que cada uma das suas classes im-
+
+plemente essa interface.
+
+(c) (3,0 ponto) O método getCarbonoEmitido deve calcular uma pe-
+
+gada de carbono adequada para cada uma dessas classes. Para tal,
+
+confira alguns sites que mostram os dados que podem ser conside-
+
+rados no cálculo, por exemplo:
+
+http://www.iniciativaverde.org.br/calculadora/index.php
+
+http://calculadora.eccaplan.com.br/
+
+http://www.centroeducacionalfsa.org.br/cefsa/calculadora_carbono/index.aspx
+
+Confira também alguns sites que expliquem como fazer o cálculo.
+
+Não precisa utilizar uma fórmula complicada e exata para calcular a
+
+pegada de cada uma das classes, pois esse não é o objetivo principal
+
+da atividade.
+
+(d) (1,0 ponto) Escreva um construtor para cada classe que inicializa os
+
+atributos supondo que os valores fornecidos são corretos.
+
+(e) (1,0 ponto) Escreva os métodos acessadores (get) para cada classe,
+
+um para cada atributo.
+
+(f) (1,0 ponto) Escreva os métodos modificadores (set) para cada classe,
+
+um para cada atributo. Suponha que os valores fornecidos são cor-
+
+retos.
+
+(g) (1,0 ponto) Escreva um método chamado toString para cada classe
+
+que devolva um string com os valores dos atributos do objeto.
+
+EXERCÍCIO 2
+
+(1 ponto) Escreva um aplicativo de teste chamado TesteCarbono para
+
+testar a interface e as classes criadas no Exercício 1. O aplicativo deve:
+
+(a) Criar 3 objetos, um de cada classe.
+
+(b) Criar um vetor com os três objetos criados.
+
+(c) Iterar pelo vector chamando polimorficamente o método getCarbo-
+
+noEmitido de cada objeto. Para cada objeto, imprima as informações
+
+e a pegada de carbono dele.

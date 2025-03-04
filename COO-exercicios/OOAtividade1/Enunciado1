@@ -1,0 +1,28 @@
+EXERCÍCIO 1
+
+Crie uma classe chamada Data que inclua os atributos dia, mês e ano.
+
+Além disso forneça:
+
+(a) (0,5 ponto) Um construtor que inicializa os três atributos supondo
+
+que os valores fornecidos são corretos.
+
+(b) (0,5 ponto) Os métodos acessadores (get), um para cada atributo.
+
+(c) (0,5 ponto) Um método modificador (set) que receba o dia, mês e
+
+ano e que modifique os valores dos três atributos. Suponha que os
+
+valores fornecidos são corretos.
+
+(d) (0,5 ponto) Um método chamado toString que devolva um string
+
+com o dia, mês e ano separados por "/".
+
+(e) (3,0 pontos) Um método chamado trocarCom que permite fazer a
+
+troca de duas datas. Esse método deve receber apenas UMA data
+
+como parâmetro, não duas.
+
