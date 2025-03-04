@@ -1,0 +1,5 @@
+Taxa de Aprendizagem = 0.1
+Número de neurônios na camada de entradas = 63
+Número de neurônios na camada escondida = 21
+Número de neurônios na camada de saida = 7
+Função de ativação = Tangente Hiperbólica
