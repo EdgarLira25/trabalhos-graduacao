@@ -1,7 +1,0 @@
-.git/
-venv/
-.venv/
-__pycache__/
-ignore/
-pg_dump.sql
-.env
